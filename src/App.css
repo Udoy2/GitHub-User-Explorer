@@ -1,0 +1,31 @@
+.main{
+  text-align: center;
+}
+
+
+.load_btn{
+  padding: 1rem 3rem;
+  background: #2E236C;
+  color: #C8ACD6;
+  border: 0px;
+  border-radius: 2rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  transition: 0.1s ease-in;
+}
+.load_btn:hover{
+  border: 1px solid #C8ACD6;
+}
+
+.card_container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  gap: 16px;
+  padding: 20px;
+  justify-content: center;
+}
