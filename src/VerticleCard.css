@@ -1,0 +1,17 @@
+.verticleCard{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 90%;
+    height: 100px;
+    background-color: #2E236C;
+    border-radius: 1rem;
+    border: 1px solid #c8acd638;
+    margin-top: 1rem;
+}
+
+.verticle_avatar{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}

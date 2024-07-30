@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Card.css";
-function Card({username,name,avatar}) {
+import { UserContext } from "./datalayer/userContext";
+function Card({username,avatar}) {
+  const [currentUser,setCurrentUser] = useContext(UserContext);
   return (
-    <div className="card">
+    <div className="card" onClick={()=>setCurrentUser(username)}>
       <div >
         <img src={avatar} className="avatar"/>
       </div>
