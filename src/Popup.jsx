@@ -31,6 +31,11 @@ function Popup({avatar}) {
       getGithubUserDetails(url,setfollowers);
     }
   },[currentUser])
+
+  const handleVerticleCard = (user)=> {
+    setCurrentUser("");
+    setCurrentUser(user);
+  }
   return (
     <>
 
@@ -43,7 +48,9 @@ function Popup({avatar}) {
       <span className="username">{!loading?`@${userDetails.login}`:"Loading..."}</span>
       <br /><span className="name">{userDetails.name}</span>
       <div className="user_data">
-        {followers.map((follower)=><VerticleCard follower={follower}/>)}
+      <br /><span className="name">Total Followers of {userDetails.name} is {followers.length}</span>
+
+        {followers.map((follower)=><VerticleCard  follower={follower} handleClick={handleVerticleCard}/>)}
       </div>
     </div>
     </>
