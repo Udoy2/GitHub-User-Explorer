@@ -33,7 +33,6 @@ function Popup({avatar}) {
   },[currentUser])
 
   const handleVerticleCard = (user)=> {
-    setCurrentUser("");
     setCurrentUser(user);
   }
   return (
